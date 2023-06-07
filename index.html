@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canada Travels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: rgb(16, 11, 4);
+      
+    }
+    .hero-image {
+      /* background-image: url(./country_image_Canada\\(1\).jpg); */
+      height: 100vh;
+      width: 100vw;
+      background-size: cover;
+    }
+    .hero-image
+      > header:nth-child(1)
+      > nav:nth-child(1)
+      > div:nth-child(1)
+      > ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    header {
+      padding-top: 20px;
+    }
+    .hero-image header nav div ul li a {
+      padding: 0 75px;
+      font-size: 24px;
+      text-decoration: none;
+      color: white;
+      font-family: "DM Serif Display", serif;
+    }
+    .hero-image header nav div ul li a:hover {
+      color: #d40000;
+    }
+    .hero-items {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-items p {
+      font-size: 62px;
+      color: white;
+      line-height: 32px;
+    }
+    .hero-items > p:nth-child(1) > span:nth-child(3) {
+      margin-left: 28rem;
+      font-size: 40px;
+    }
+    .hero-items > p:nth-child(1) > span:nth-child(1) {
+      color: #f71515;
+      font-weight: 800;
+    }
+    .hero-image
+      > header:nth-child(1)
+      > nav:nth-child(1)
+      > div:nth-child(1)
+      > img:nth-child(1) {
+      display: block;
+      width: 122px;
+      position: absolute;
+      top: -1rem;
+    }
+    .first-h1 {
+      padding: 150px 110px;
+    }
+    .flex {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      height: 400px;
+    }
+    .guides {
+      border: 2px solid rgb(252, 168, 168);
+      height: 300px;
+      width: 300px;
+      display: inline;
+      text-align: center;
+      padding-top: 60px;
+      border-radius: 30px;
+      background-color: rgb(254, 212, 185);
+    }
+    .guides:hover {
+      background-color: rgb(243, 241, 243);
+    }
+    h1 {
+      display: flex;
+      justify-content: center;
+      height: 100px;
+      align-items: center;
+      font-size: 3.4rem;
+      letter-spacing: 2px;
+      color: #fff;
+    }
+    h4 {
+      font-size: 25px;
+    }
+    .guides p {
+      padding-top: 35px;
+    }
+    .page2 {
+      height: 130vh;
+      width: 100vw;
+      /* background-color: white; */
+    }
+    .about-us {
+      font-size: 3.4rem;
+      letter-spacing: 2px;
+      height: 200px;
+    }
+    .page3 {
+      display: flex;
+      justify-content: space-evenly;
+      border: 2px solid red;
+      border-radius: 90px;
+      border-bottom: none;
+      border-right: none;
+      width: 100vw;
+      height: 100vh;
+    }
+    .page3 > img:nth-child(2) {
+      width: 515px;
+      align-self: self-end;
+      justify-self: end;
+      position: relative;
+      top: -10px;
+      left: 10px;
+      opacity: 0.15;
+      rotate: -32deg;
+     
+    }
+    .textaboutus {
+      width: 500px;
+    }
+    .textaboutus p {
+      font-size: 18px;
+      padding-bottom: 21px;
+      color: white;
+    }
+    .textaboutus > p:nth-child(3) {
+      padding-top: 20px;
+    }
+    .info {
+      width: 500px;
+      display: flex;
+    }
+    .info img {
+      height: 90px;
+      position: relative;
+      bottom: 18px;
+    }
+    .page4 {
+      margin-top: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .container {
+      width: 650px;
+      height: 540px;
+      position: relative;
+      left: 22rem;
+      top: 6rem;
+      border-radius: 10px;
+      background: linear-gradient(to right, #00093c, #2d0b00);
+    }
+    .el {
+      margin-bottom: 25px;
+    }
+    .container > form:nth-child(1) > h1:nth-child(1) {
+      font-size: 34px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      color: white;
+      font-weight: 100;
+    }
+    .inputs > label:nth-child(1) {
+    }
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 26px;
+    }
+    .inputs input {
+      width: 367px;
+      height: 41px;
+    }
+    .inputs .el input {
+      background: transparent;
+      border-bottom: 1px solid white;
+      color: white;
+      opacity: 0.5;
+    }
+    .inputs p {
+      font-size: 18px;
+      color: #fff;
+      letter-spacing: 2px;
+      position: relative;
+      left: 18px;
+      opacity: 0.6;
+    }
+    .inputs input {
+      margin-bottom: 21px;
+      border: 2px solid transparent;
+      border-radius: 20px;
+    }
+    div.el:nth-child(4) > input:nth-child(1) {
+      height: 49px;
+      width: 100px;
+      padding-right: 12px;
+    }
+    .el input {
+      font-size: 18px;
+      padding-left: 15px;
+    }
+    .submit input {
+      width: 240px;
+      font-size: 24px;
+      letter-spacing: 5px;
+    }
+
+    .back-video {
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      width: 100%;
+      /* height: 100% */
+    }
+    .back-video1 {
+      position: relative;
+      display: block;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      /* height: 100% */
+    }
+    .page4 {
+      /* margin-top: -48rem; */
+      width: 100%;
+      height: 130%;
+    }
+    .feel > p:nth-child(1) {
+      font-size: 49px;
+      position: relative;
+      top: 0;
+      color: aliceblue;
+      font-weight: 200;
+    }
+    footer {
+      width: 100%;
+      position: relative;
+      top: 123px;
+      background: linear-gradient(to right, #00093c, #2d0b00);
+      color: #fff;
+      padding: 100px 0 30px;
+      /* border-top-left-radius: 125px; */
+      font-size: 15px;
+    }
+    .row {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .col {
+      flex-basis: 25%;
+      padding: 10px;
+    }
+    .logo {
+      margin-bottom: 30px;
+    }
+    .col h3 {
+      width: fit-content;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .email-id {
+      width: fit-content;
+      border-bottom: 1px solid #ccc;
+      margin: 20px 0;
+    }
+    ul li {
+      list-style: none;
+      margin-bottom: 12px;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    @media screen and (min-width:300px) and (max-width: 768px) {
+      .hero-image{
+        background: url(./wallpaperflare.com_wallpaper\ \(2\).jpg);
+        background-size: cover;
+      }
+      .hero-items > p:nth-child(1){
+        position: relative;
+        right: -1rem;
+        font-size: 55px;
+      }
+      .page3{
+        position: relative;
+        top: 7rem;
+      }
+      .page4{
+        position: relative;
+        top: 5rem;
+      }
+      div.col:nth-child(1) > p:nth-child(2){
+        font-size: 11px;
+        opacity: 0.6;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .hero-image header nav div ul li a {
+        padding: 0 10px;
+        font-size: 16px;
+      }
+      
+      .hero-image
+        > header:nth-child(1)
+        > nav:nth-child(1)
+        > div:nth-child(1)
+        > ul:nth-child(2) {
+        margin-left: 33px;
+      }
+      .hero-image
+        > header:nth-child(1)
+        > nav:nth-child(1)
+        > div:nth-child(1)
+        > img:nth-child(1) {
+        width: 73px;
+      }
+      .back-video {
+        display: none;
+        background: url(./Toronto\ Skyline\ Hyperlapse\ at\ night\ -\ Mavic\ 3\ Cine\ Drone.mp4);
+        z-index: 12;
+      }
+      .hero-items > p:nth-child(1) {
+        /* font-size: 32px; */
+        line-height: 80px;
+        position: relative;
+        bottom: 3rem;
+        width: 350px;
+        height: 300px;
+        font-size: 65px;
+        right: -1rem;
+      }
+      .hero-items > p:nth-child(1) > span:nth-child(3) {
+        margin-left: 0;
+      }
+      .first-h1 {
+        padding: 90px 65px;
+        position: relative;
+        font-size: 43px;
+      }
+      .page2 > hr:nth-child(2) {
+        position: relative;
+        bottom: 0;
+      }
+      .flex {
+        position: relative;
+        top: 11rem;
+        flex-direction: column;
+      }
+      .guides {
+        justify-content: space-around;
+        width: 198px;
+        height: 204px;
+        padding-top: 0;
+      }
+      div.guides:nth-child(1) > img {
+        width: 77px;
+      }
+      div.guides:nth-child(2),
+      div.guides:nth-child(3) {
+        margin-top: 30px;
+      }
+      div.guides > p {
+        padding-top: 10px;
+      }
+      .page2 {
+        height: 100vh;
+      }
+      .page3 .textaboutus h1 {
+        position: relative;
+        left: 15rem;
+      }
+      .textaboutus {
+        width: 244px;
+      }
+      .textaboutus .info {
+        position: relative;
+        left: 10rem;
+        width: 411px;
+        top: 1rem;
+      }
+      .page3 > img:nth-child(2) {
+        top: -19rem;
+        position: relative;
+        width: 483px;
+        rotate: 0deg;
+        left: -12rem;
+      }
+      {
+        
+      }
+      div.info > p {
+        font-size: 23px;
+        padding-bottom: 48px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .textaboutus > hr:nth-child(2) {
+        position: relative;
+        left: 15rem;
+        bottom: 4rem;
+      }
+      .page4 {
+        margin-top: 18px;
+        display: flex;
+      }
+      .container {
+        width: 394px;
+        height: 516px;
+        position: relative;
+        left: 0;
+        top: 4rem;
+      }
+      div.col:nth-child(1) > p:nth-child(2) {
+        width: 300px;
+      }
+      footer {
+        padding: 17px 0 30px;
+      }
+      .logo {
+        width: 51px;
+        position: relative;
+        left: 10.2rem;
+      }
+
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+      .hero-image header nav div ul li a{
+        padding: 0 42px;
+        font-size: 20px;
+      }
+      .hero-image{
+        background: url(./725671.jpg);
+        background-size: cover;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-items > p:nth-child(1) {
+        position: relative;
+        bottom: 0;
+        font-size: 56px;
+      }
+      .hero-image header nav div ul li a {
+        padding: 0 58px;
+        font-size: 22px;
+      }
+      .hero-image{
+        background-image: url(./country_image_Canada\ \(1\).jpg);
+      }
+    }
+  </style>
+  <body>
+
+    <div class="hero-image">
+      <header>
+        <nav>
+          <div>
+            <img src="./leaf.png" alt="" />
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="hero-items">
+        <p>
+          Welcome to <span>Canada</span> Travels <br />
+          <span>& Tourism</span>
+        </p>
+      </div>
+    </div>
+    <div class="page2">
+      <h1 class="first-h1">Our Services</h1>
+      <hr />
+      <p class="linebottom"></p>
+      <div class="flex">
+        <div class="guides">
+          <img src="./icons8-flight-100.png" alt="" />
+          <h4>Flight Booking</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
+            recusandae velit repellendus?
+          </p>
+        </div>
+        <div class="guides">
+          <img src="./icons8-consulting-96.png" alt="" />
+          <h4>Consultation</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
+            facere ab odio.
+          </p>
+        </div>
+        <div class="guides">
+          <img src="./icons8-visa-100.png" alt="" />
+          <div class="image"></div>
+          <h4>Visa Facilities</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="page3">
+      <div class="textaboutus">
+        <h1 class="about-us">About Us</h1>
+        <hr />
+        <br />
+        <div class="info">
+          <img src="./leaf.png" alt="" />
+          <p>
+            Canada Travels and Tourism is dedicated to providing comprehensive
+            services that encompass both travel and immigration assistance.
+            <br />
+          </p>
+        </div>
+        <div class="info">
+          <img src="./leaf.png" alt="" srcset="" />
+          <p>
+            We offer a wide range of services designed to guide you through
+            every step of your immigration journey. <br />
+          </p>
+        </div>
+        <div class="info">
+          <img src="./leaf.png" alt="" srcset="" />
+          <p>
+            We adhere to the highest ethical standards and prioritize
+            transparency and integrity in all our dealings and understand the
+            importance of your dreams and treat every client with respect,
+            professionalism, and confidentiality. <br />
+          </p>
+        </div>
+      </div>
+
+      <img src="./maple-leaf.png" alt="" />
+    </div>
+    <!-- <video autoplay loop muted class="back-video1">
+      <source src="./VID_20230604_181841.mp4" type="video/mp4" />
+    </video> -->
+    <div class="page4">
+      <h1 class="feel">
+        <p>Contact Us</p>
+      </h1>
+      <div class="container">
+        <form>
+          <h1>Sign Up</h1>
+          <hr />
+          <div class="inputs">
+            <div class="el">
+              <p>Full Name:</p>
+              <input type="text" placeholder="Enter your name." />
+            </div>
+            <div class="el">
+              <p>Email Address:</p>
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Enter your Email Address."
+              />
+            </div>
+            <div class="el">
+              <p>Phone Number:</p>
+              <input
+                type="number"
+                name=""
+                id=""
+                placeholder="Enter your Phone number."
+              />
+            </div>
+            <div class="submit">
+              <input type="submit" value="Submit" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div>
+      <footer>
+        <div class="row">
+          <div class="col">
+            <img src="./pngegg (1).png" alt="" class="logo" width="100px" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              cumque odio praesentium, quae corrupti maxime perspiciatis a hic
+              unde officiis soluta illo, obcaecati, facilis incidunt. Deleniti
+              provident ratione ipsam consequatur ad cumque dolorum distinctio!
+            </p>
+          </div>
+          <div class="col">
+            <h3>Office</h3>
+            <p>Canada Travels and Tourism</p>
+            <p>Near Imam Bargah Haideri,</p>
+            <p>Dera Ghazi Khan, Pakistan.</p>
+            <p class="email-id">travelscanada01@gmail.com</p>
+            <h5>+92-313-6782039</h5>
+          </div>
+          <div class="col">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
